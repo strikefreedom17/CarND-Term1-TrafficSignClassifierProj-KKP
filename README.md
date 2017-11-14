@@ -186,6 +186,4 @@ For the 5th image, the model is relatively sure that this is a Slippery road ton
 | ~0	                  | (2) Speed limit (50km/h)				 				|
 | ~0				               | (3) Speed limit (60km/h)      							|
 
-### (Optional) Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
-####1. Discuss the visual output of your trained network's feature maps. What characteristics did the neural network use to make classifications?
--
+
