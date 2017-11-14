@@ -35,7 +35,7 @@ For example, the traffic sign is shown as:
 
 ![alt text](Pics/Example_Sign.png)
 
-Here is an exploratory visualization of the data set. It is a bar chart showing how the data histrogram corresponding to each traffic sign:
+Here is an exploratory visualization of the data set. It is a bar chart showing the data histrogram corresponding to each traffic sign:
 
 ![alt text](Pics/Train_data.png)
 
@@ -46,25 +46,22 @@ Here is an exploratory visualization of the data set. It is a bar chart showing 
 ####1. In order to pass the training data to the train architecture, first I normalized the image data because it will help for better and faster optimization convergence. After normalization, each feature value will range between [-1,+1]. The formular for feature normalization is given by
 X_norm = (X/122.5) - 1
 
-Note that, the data augmentation and additional image processing technique have not been utilized at this point.
-
-
 
 ####2. Describe what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
 
 My final model consisted of the following layers:
 
-| Layer         		|     Description	        					| 
-|:---------------------:|:---------------------------------------------:| 
-| Input         		| 32x32x3 RGB image   							| 
-| Convolution 3x3     	| 1x1 stride, same padding, outputs 32x32x64 	|
-| RELU					|												|
-| Max pooling	      	| 2x2 stride,  outputs 16x16x64 				|
-| Convolution 3x3	    | etc.      									|
-| Fully connected		| etc.        									|
-| Softmax				| etc.        									|
-|						|												|
-|						|												|
+|  Layer Number  |        Function     		|              Description	        					        | 
+|:--------------:|:---------------------:|:---------------------------------------------:| 
+| 1 | Input         	      	| 32x32x3 RGB image   							| 
+|  | Convolution 3x3     	| 1x1 stride, same padding, outputs 32x32x64 	|
+|  | RELU					|												|
+| |Max pooling	      	| 2x2 stride,  outputs 16x16x64 				|
+| 2 | Convolution 3x3	    | etc.      									|
+| 3 | Fully connected		| etc.        									|
+| 4| Softmax				| etc.        									|
+|						|												| |
+|						|												| |
  
 
 
