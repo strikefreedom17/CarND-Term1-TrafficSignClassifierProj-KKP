@@ -53,10 +53,10 @@ My final model consisted of the following layers:
 
 |  Layer Number  |        Function     		|              Description	        					        | 
 |:--------------:|:---------------------:|:---------------------------------------------:| 
-| 1 | Input         	      	| 32x32x3 RGB image   							| 
-|  | Convolution 3x3     	| 1x1 stride, same padding, outputs 32x32x64 	|
-|  | RELU					|												|
-| |Max pooling	      	| 2x2 stride,  outputs 16x16x64 				|
+| 1              | Input                 | 32x32x3 RGB image   							| 
+|                | Convolution 7x7     	 | 1x1 stride, valid padding, outputs 26x26x32  	|
+|                | RELU	Activation   				|												|
+|                | Max pooling	         	| 2x2 stride,  outputs 13x13x32 				|
 | 2 | Convolution 3x3	    | etc.      									|
 | 3 | Fully connected		| etc.        									|
 | 4| Softmax				| etc.        									|
