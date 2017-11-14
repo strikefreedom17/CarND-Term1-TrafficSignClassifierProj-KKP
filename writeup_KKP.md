@@ -133,7 +133,7 @@ The model was able to correctly guess 5 of the 5 traffic signs, which gives an a
 
 The code for making predictions on my final model is located in the 11th cell of the Ipython notebook.
 
-For the first image, the model is relatively sure that this is a stop sign (probability of ~1), and the image does contain a stop sign. The top five soft max probabilities were
+For the first image, the model is relatively sure that this is a Speed limit (60km/h) sign (probability of ~1), and the image does contain a Speed limit (60km/h) sign. The top five soft max probabilities were
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
@@ -144,7 +144,45 @@ For the first image, the model is relatively sure that this is a stop sign (prob
 | 1.95998884e-31				   | (36) Go straight or right      							|
 
 
-For the second image ... 
+For the 2nd image, the model is relatively sure that this is a No passing for vehicles over 3.5 metric tons sign (probability of ~1), and the image does contain a No passing for vehicles over 3.5 metric tons sign. The top five soft max probabilities were
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| ~1         			       | (10) No passing for vehicles over 3.5 metric tons  									| 
+| ~0     		| (0) Speed limit (20km/h) 										|
+| ~0					  | (1) Speed limit (30km/h)											|
+| ~0	      | (2) Speed limit (50km/h)				 				|
+| ~0				   | (3) Speed limit (60km/h)      							|
+
+For the 3rd image, the model is relatively sure that this is a Right-of-way at the next intersection sign (probability of ~1), and the image does contain a Right-of-way at the next intersection sign. The top five soft max probabilities were
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| ~1         			       | (11) Right-of-way at the next intersection  									| 
+| 4.93825290e-15     		| (30) Beware of ice/snow 										|
+| 4.88183014e-18					  | (23) Slippery road											|
+| 4.87258081e-19	      | (40) Roundabout mandatory				 				|
+| 1.06474301e-21				   | (27) Pedestrians      							|
+
+For the 4th image, the model is relatively sure that this is a No passing for vehicles over 3.5 metric tons sign (probability of ~1), and the image does contain a No passing for vehicles over 3.5 metric tons sign. The top five soft max probabilities were
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| ~1         			       | (10) No passing for vehicles over 3.5 metric tons  									| 
+| 2.40800730e-11     		| (5) Speed limit (80km/h) 										|
+| 7.57201680e-12					  | (9) No passing											|
+| 1.36541993e-12	      | (20) Dangerous curve to the right				 				|
+| 2.62123873e-13				   | (23) Slippery road      							|
+
+For the 5th image, the model is relatively sure that this is a Slippery road tons sign (probability of ~1), and the image does contain a Slippery road sign. The top five soft max probabilities were
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| ~1         			       | (23) Slippery road  									| 
+| ~0     	            	| (0) Speed limit (20km/h) 										|
+| ~0					              | (1) Speed limit (30km/h)										|
+| ~0	                  | (2) Speed limit (50km/h)				 				|
+| ~0				               | (3) Speed limit (60km/h)      							|
 
 ### (Optional) Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
 ####1. Discuss the visual output of your trained network's feature maps. What characteristics did the neural network use to make classifications?
