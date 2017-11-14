@@ -75,27 +75,30 @@ My final model consisted of the following layers:
 
 ####3. Describe how you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
 
-To train the model, I used an ....
+In order to train the model, first the loss function is chosen as sum of square error. The Adam optimizer is chosen in this project due to its benefit of larger effective step size compared to gradient descent. The downside is this type of optimizer may require more computation. Increasing number of epochs will increase the training time as well as the training model accuracy. The final validation model accuracy is >93%. Learning rate is set to be at 0.001 after several trial and error. Some larger learning, i.e. 0.01, 0.1, can result in divergence of the optimal solution. 
 
 ####4. Describe the approach taken for finding a solution and getting the validation set accuracy to be at least 0.93. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
 
+First, I set the learning rate of 0.001, batch size = 128. The first step I tuned is the convolutional filter size. After several tuning iteration, my filter size and depth for both layer 1 and 2 are described in the model table. Small filter size in both layer 1 and 2 doesn't provide good model accuracy and the training time is very long. 
+
 My final model results were:
-* training set accuracy of ?
-* validation set accuracy of ? 
-* test set accuracy of ?
+* training set accuracy of 100%
+* validation set accuracy of 95.1%
+* test set accuracy of 93.95%
 
 If an iterative approach was chosen:
 * What was the first architecture that was tried and why was it chosen?
+- The first archietecture (Default LeNet architecture from previous example of traffic sign classification before this project) does not achieve the model accuracy requirement. The model accuracy is ~90% which is closed enough, therefore, this LeNet architecture is chosen as a starting point.
+
 * What were some problems with the initial architecture?
+
 * How was the architecture adjusted and why was it adjusted? Typical adjustments could include choosing a different model architecture, adding or taking away layers (pooling, dropout, convolution, etc), using an activation function or changing the activation function. One common justification for adjusting an architecture would be due to overfitting or underfitting. A high accuracy on the training set but low accuracy on the validation set indicates over fitting; a low accuracy on both sets indicates under fitting.
+
 * Which parameters were tuned? How were they adjusted and why?
+
 * What are some of the important design choices and why were they chosen? For example, why might a convolution layer work well with this problem? How might a dropout layer help with creating a successful model?
 
-If a well known architecture was chosen:
-* What architecture was chosen?
-* Why did you believe it would be relevant to the traffic sign application?
-* How does the final model's accuracy on the training, validation and test set provide evidence that the model is working well?
- 
+
 
 ###Test a Model on New Images
 
@@ -103,8 +106,8 @@ If a well known architecture was chosen:
 
 Here are five German traffic signs that I found on the web:
 
-![alt text][image4] ![alt text][image5] ![alt text][image6] 
-![alt text][image7] ![alt text][image8]
+![alt text][Pics/sign1.png] ![alt text][Pics/sign2.png] ![alt text][Pics/sign3.png] 
+![alt text][Pics/sign4.png] ![alt text][Pics/sign5.png]
 
 The first image might be difficult to classify because ...
 
