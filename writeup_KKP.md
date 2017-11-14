@@ -106,8 +106,8 @@ If an iterative approach was chosen:
 
 Here are five German traffic signs that I found on the web:
 
-![alt text][Pics/sign1.png] ![alt text][Pics/sign2.png] ![alt text][Pics/sign3.png] 
-![alt text][Pics/sign4.png] ![alt text][Pics/sign5.png]
+![alt text](Pics/sign1.png) ![alt text](Pics/sign2.png) ![alt text](Pics/sign3.png)
+![alt text](Pics/sign4.png) ![alt text](Pics/sign5.png)
 
 The first image might be difficult to classify because ...
 
