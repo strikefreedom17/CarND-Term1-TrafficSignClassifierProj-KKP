@@ -53,15 +53,23 @@ My final model consisted of the following layers:
 
 |  Layer Number  |        Function     		|              Description	        					        | 
 |:--------------:|:---------------------:|:---------------------------------------------:| 
-| 1              | Input                 | 32x32x3 RGB image   							| 
+| 1              | Input                 | 32x32x3 RGB image   						                   	| 
 |                | Convolution 7x7     	 | 1x1 stride, valid padding, outputs 26x26x32  	|
-|                | RELU	Activation   				|												|
-|                | Max pooling	         	| 2x2 stride,  outputs 13x13x32 				|
-| 2 | Convolution 3x3	    | etc.      									|
-| 3 | Fully connected		| etc.        									|
-| 4| Softmax				| etc.        									|
-|						|												| |
-|						|												| |
+|                | RELU	Activation   				|	-											                                  |
+|                | Max pooling	         	| 2x2 stride,  outputs 13x13x32 				            |
+|:--------------:|:---------------------:|:---------------------------------------------:| 
+| 2              | Convolution 6x6	      | 1x1 stride, valid padding, outputs 8x8x32   		|
+|                | RELU	Activation   				|	-											                                  |
+|                | Max pooling	         	| 2x2 stride,  outputs 4x4x32 				              |
+|                | Flattening 	         	| outputs 512 				                              |
+|:--------------:|:---------------------:|:---------------------------------------------:|
+| 3              | Fully connected	     	| logits = XW + b, 512x120 weight, outputs 120  |
+|                | RELU	Activation 	     | - 				                                        |
+|:--------------:|:---------------------:|:---------------------------------------------:|
+| 4              | Fully connected	     	| logits = XW + b, 120x84 weight, outputs 84.   |
+|                | RELU	Activation 	     | - 				                                        |
+|:--------------:|:---------------------:|:---------------------------------------------:|
+| 5              | Fully connected	     	| logits = XW + b, 84x43 weight, outputs 43.    |
  
 
 
