@@ -31,10 +31,13 @@ signs data set:
 * The number of unique classes/labels in the data set is 43
 
 ####2. Include an exploratory visualization of the dataset.
+For example, the traffic sign is shown as:
+![alt text](Pics/Example_Sign.png)
 
-Here is an exploratory visualization of the data set. It is a bar chart showing how the data ...
+Here is an exploratory visualization of the data set. It is a bar chart showing how the data histrogram corresponding to each traffic sign:
+![alt text](Pics/Train_data.png)
 
-![alt text](Pics/grayscale.jpg)
+
 
 ###Design and Test a Model Architecture
 
